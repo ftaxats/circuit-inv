@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "cd apps/web && npm run dev",
-    "build": "cd packages/utilities && npm run build && cd ../../apps/web && npm run build",
+    "build": "cd apps/web && npm run build",
     "start": "cd apps/web && npm run start",
     "lint": "cd apps/web && npm run lint"
   },
