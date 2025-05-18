@@ -4,8 +4,8 @@ import {
   Instrument_Sans,
   Urbanist,
   Bricolage_Grotesque,
+  Inter,
 } from "next/font/google";
-import localFont from "next/font/local";
 import {
   ReactScanProvider,
   JotaiProvider,
@@ -21,16 +21,17 @@ import { Toaster } from "sonner";
 import "./globals.css";
 import "./fonts.css";
 
-// Geist Sans
-const geistSans = localFont({
-  src: "../fonts/GeistSans-Regular.woff2",
+// Geist Sans (using Inter as a fallback)
+const geistSans = Inter({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-// Geist Mono
-const geistMono = localFont({
-  src: "../fonts/GeistMono-Regular.woff2",
+// Geist Mono (using JetBrains Mono as a fallback)
+const geistMono = JetBrains_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
 });
 
 // JetBrains Mono
