@@ -1,29 +1,33 @@
 {
   "name": "@invoice/utilities",
+  "version": "0.1.0",
   "private": true,
-  "version": "1.0.0",
-  "description": "a package for utilities related to invoice project",
-  "repository": "https://www.linkedin.com/in/akshat-shah-1614101b8/",
-  "author": "Akshat Shah",
-  "license": "MIT",
-  "exports": {
-    ".": {
-      "import": "./src/index.ts",
-      "require": "./src/index.ts"
-    }
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint .",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "@t3-oss/env-nextjs": "^0.13.4",
+    "date-fns": "^3.3.1",
+    "idb": "^8.0.0",
+    "jspdf": "^2.5.1",
+    "number-flow": "^1.0.0",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@invoice/eslint-config": "workspace:*",
-    "@invoice/typescript-config": "workspace:*",
-    "@turbo/gen": "^2.5.0",
     "@types/node": "^22.15.3",
     "@types/react": "19.1.0",
     "@types/react-dom": "19.1.1",
     "eslint": "^9.25.0",
+    "tsup": "^8.0.2",
     "typescript": "5.8.2"
   },
-  "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+  "engines": {
+    "node": ">=20.0.0"
   }
 }
