@@ -1,12 +1,11 @@
 import {
-  Geist,
-  Geist_Mono,
   JetBrains_Mono,
   Instrument_Serif,
   Instrument_Sans,
   Urbanist,
   Bricolage_Grotesque,
 } from "next/font/google";
+import localFont from "next/font/local";
 import {
   ReactScanProvider,
   JotaiProvider,
@@ -23,15 +22,15 @@ import "./globals.css";
 import "./fonts.css";
 
 // Geist Sans
-const geistSans = Geist({
+const geistSans = localFont({
+  src: "../fonts/GeistSans-Regular.woff2",
   variable: "--font-geist-sans",
-  subsets: ["latin"],
 });
 
 // Geist Mono
-const geistMono = Geist_Mono({
+const geistMono = localFont({
+  src: "../fonts/GeistMono-Regular.woff2",
   variable: "--font-geist-mono",
-  subsets: ["latin"],
 });
 
 // JetBrains Mono
