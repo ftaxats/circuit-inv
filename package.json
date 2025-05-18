@@ -1,48 +1,13 @@
 {
   "name": "invoice",
+  "version": "0.1.0",
   "private": true,
-  "version": "1.0.0",
-  "description": "a package for utilities related to invoice project",
-  "repository": "https://www.linkedin.com/in/akshat-shah-1614101b8/",
-  "author": "Akshat Shah",
-  "license": "MIT",
   "scripts": {
-    "sys-link": "./env-links.sh",
-    "postinstall": "patch-package",
-    "reset-repo": "git clean -Xdf",
-    "prepare": "husky",
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "dev:scan": "turbo run dev & npx react-scan@latest localhost:3000",
-    "start": "turbo run start",
-    "production": "turbo run build && turbo run start",
-    "lint": "turbo run lint",
-    "lint:fix": "turbo run lint:fix",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "check-types": "turbo run check-types"
+    "dev": "cd apps/web && npm run dev",
+    "build": "cd apps/web && npm run build",
+    "start": "cd apps/web && npm run start",
+    "lint": "cd apps/web && npm run lint"
   },
-  "devDependencies": {
-    "@invoice/eslint-config": "workspace:*",
-    "@invoice/typescript-config": "workspace:*",
-    "@turbo/gen": "^2.5.0",
-    "@types/node": "^22.15.3",
-    "@types/react": "19.1.0",
-    "@types/react-dom": "19.1.1",
-    "eslint": "^9.25.0",
-    "husky": "^9.1.7",
-    "patch-package": "^8.0.0",
-    "prettier": "^3.2.5",
-    "turbo": "^2.5.0",
-    "typescript": "5.8.2"
-  },
-  "dependencies": {
-    "@t3-oss/env-nextjs": "^0.13.4"
-  },
-  "packageManager": "yarn@4.9.1",
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
   "engines": {
     "node": ">=20.0.0"
   }
