@@ -1,0 +1,23 @@
+// Follow the naming convention: NameIcon
+export { default as SidebarMenuIcon } from "./sidebar-menu";
+export { default as SquareWandSparkleIcon } from "./square-wand-sparkle";
+export { default as ReceiptIcon } from "./recipt";
+export { default as GaugeIcon } from "./gauge";
+export { default as InboxArrowDownIcon } from "./inbox-arrow-down";
+export { default as EyeScannerIcon } from "./eye-scanner";
+export { default as ImageSparkleIcon } from "./image-sparkle";
+export { default as BoxPlusIcon } from "./box-plus";
+export { default as BoxIcon } from "./box";
+export { default as TrashIcon } from "./trash";
+export { default as CalendarPenIcon } from "./calender-pen";
+export { default as FileAlertIcon } from "./file-alert";
+export { default as FileFeatherIcon } from "./file-feather";
+export { default as FileDownloadIcon } from "./file-download";
+export { default as FileTreeIcon } from "./file-tree";
+export { default as GithubIcon } from "./github";
+export { default as BlogIcon } from "./blog";
+export { default as SignatureIcon } from "./signature";
+export { default as CircleXmarkIcon } from "./circle-x-mark";
+export { default as CircleCheckIcon } from "./circle-check";
+export { default as TriangleWarningIcon } from "./triangle-warning";
+export { default as LabelInfoIcon } from "./label-info";

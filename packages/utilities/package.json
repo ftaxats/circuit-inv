@@ -1,0 +1,29 @@
+{
+  "name": "@invoice/utilities",
+  "private": true,
+  "version": "1.0.0",
+  "description": "a package for utilities related to invoice project",
+  "repository": "https://www.linkedin.com/in/akshat-shah-1614101b8/",
+  "author": "Akshat Shah",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "import": "./src/index.ts",
+      "require": "./src/index.ts"
+    }
+  },
+  "devDependencies": {
+    "@invoice/eslint-config": "workspace:*",
+    "@invoice/typescript-config": "workspace:*",
+    "@turbo/gen": "^2.5.0",
+    "@types/node": "^22.15.3",
+    "@types/react": "19.1.0",
+    "@types/react-dom": "19.1.1",
+    "eslint": "^9.25.0",
+    "typescript": "5.8.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
