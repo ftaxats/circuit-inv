@@ -1,7 +1,7 @@
-import { withContentCollections } from "@content-collections/next";
-import type { NextConfig } from "next";
+const { withContentCollections } = require("@content-collections/next");
 
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   /* config options here */
   async rewrites() {
     return [
@@ -25,4 +25,4 @@ const nextConfig: NextConfig = {
   productionBrowserSourceMaps: true,
 };
 
-export default withContentCollections(nextConfig);
+module.exports = withContentCollections(nextConfig); 
