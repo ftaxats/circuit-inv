@@ -18,11 +18,7 @@ const nextConfig = {
   ],
   skipTrailingSlashRedirect: true,
   experimental: {
-    serverComponentsExternalPackages: ["@react-pdf/renderer", "jotai-devtools", "canvas"],
-  },
-  webpack: (config) => {
-    config.resolve.alias.canvas = false;
-    return config;
+    serverComponentsExternalPackages: ["@react-pdf/renderer", "jotai-devtools"],
   },
   productionBrowserSourceMaps: true,
 };

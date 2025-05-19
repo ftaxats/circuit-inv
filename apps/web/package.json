@@ -17,7 +17,6 @@
     "@hookform/resolvers": "^3.3.4",
     "@mantine/hooks": "^7.5.1",
     "@react-pdf/renderer": "^3.3.8",
-    "canvas": "^2.11.2",
     "framer-motion": "^11.0.8",
     "fumadocs-core": "^15.3.2",
     "fumadocs-ui": "^15.3.2",
