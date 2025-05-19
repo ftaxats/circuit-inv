@@ -19,7 +19,7 @@ import { createBlobUrl } from "@/lib/invoice/create-blob-url";
 import { useFileUpload } from "@/hooks/use-file-upload";
 import SignatureCanvas from "react-signature-canvas";
 import { useEffect, useRef, useState } from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { XIcon } from "lucide-react";
 import { Button } from "../button";
 import { toast } from "sonner";

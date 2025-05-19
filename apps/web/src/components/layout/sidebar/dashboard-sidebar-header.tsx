@@ -1,7 +1,7 @@
 "use client";
 
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
 import { usePathname } from "next/navigation";
 import { SIDEBAR_ITEMS } from "@/constants";

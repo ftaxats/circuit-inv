@@ -14,7 +14,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { invoiceErrorAtom } from "@/global/atoms/invoice-atom";
-import { animate, AnimatePresence } from "motion/react";
+import { animate, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { FileAlertIcon } from "@/assets/icons";
 import React, { useEffect } from "react";
